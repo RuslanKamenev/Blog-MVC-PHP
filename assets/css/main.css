@@ -1,0 +1,603 @@
+body {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    padding: 2px;
+}
+
+thead {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+
+}
+
+th form {
+    margin: 0;
+    padding: 4px 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.top-bar {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #A0A0A0;
+    border-bottom: 1px solid black;
+}
+
+.search-bar {
+    width: 420px;
+    height: 52px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.search-bar-field {
+    width: 400px;
+    height: 40px;
+    margin-left: 6px;
+    margin-top: 6px;
+    padding-left: 4px;
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.search-results {
+    position: absolute;
+    width: 410px;
+    height: auto;
+    max-height: 500px;
+    z-index: 1;
+    padding: 5px 0;
+    background-color: white;
+    top: 52px;
+}
+.search-results a {
+    color: #305392;
+    text-decoration: none;
+}
+.search-results ul {
+    padding: 2px 5px 5px 4px;
+    margin: 0;
+}
+.search-results li {
+    border-bottom: 1px dotted grey;
+    padding: 2px 0;
+}
+.search-result-row {
+    width: 480px;
+    height: 20px;
+    display: flex;
+}
+
+.main-page {
+    margin: 12px 8px;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-error {
+    display: flex;
+    float: right;
+    margin: 12px 12px 12px auto;
+    font-size: 20px;
+    color: white;
+}
+
+.logged-greeting {
+    margin: 12px 22px 12px 12px;
+    font-size: 20px;
+    color: white;
+}
+
+.logout {
+    display: flex;
+    margin: 0 8px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.auth-form {
+    display: flex;
+    margin: 4px 6px 0 0;
+    flex-direction: column;
+}
+
+.auth-form form {
+    margin: 0 0 4px 0;
+}
+
+#user-link {
+    color: blue;
+}
+
+.upload-avatar {
+    padding: 12px 0;
+}
+
+.upload-avatar input {
+    margin: 10px 0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.login-links a{
+    margin: 0 34px 0 0;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.content-page {
+    width: auto;
+    max-width: 800px;
+    min-width: 760px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+
+.content-page-admin {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 1200px;
+    min-width: 1160px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+
+.admin-navigation {
+    width: 200px;
+}
+
+.admin-access-form {
+    padding: 6px 0;
+}
+
+.admin-access-form input {
+    margin: 6px 0;
+}
+
+.admin-posts {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.admin-posts-headline h1 {
+    padding: 0 0 4px 0;
+    margin: 0;
+}
+
+.admin-posts-table {
+    padding: 12px 0 0 0;
+}
+
+.admin-posts-table__ {
+    width: 800px;
+}
+
+.posts-not-found {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.admin-add-post-submit  {
+    width: 160px !important;
+}
+
+.admin-posts-add {
+    padding: 6px 0;
+}
+
+.admin-post-error {
+    color: #FB0E0E;
+    font-size: 24px;
+}
+
+.admin-post-editing {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 4px 12px 4px;
+}
+
+.admin-post-delete {
+    display: flex;
+    float: right;
+}
+
+.admin-post-deleted {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.admin-add-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.admin-add-post h2 {
+    margin: 4px 0;
+}
+
+.admin-add-post-title h4 {
+    padding: 8px 0;
+    margin: 0;
+}
+
+.admin-add-post-text h4 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.admin-add-post-title-form input {
+    width: 100%;
+}
+
+.posts h2 {
+    margin: 10px 0;
+}
+
+.post {
+    border: 2px solid lightblue;
+    padding: 6px 8px;
+    margin: 0 0 10px 0;
+    height: auto;
+    min-width: 760px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.post h3 {
+    margin: 4px;
+}
+
+
+.post > a {
+    text-decoration: none;
+    color: black;
+}
+
+.comment-author,
+.post-author {
+    color: blue;
+    text-decoration: none;
+}
+
+.post-headline {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-author-avatar {
+    height: 58px;
+    width: 58px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.post-author-avatar img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-info {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 8px;
+}
+
+.post-title {
+    text-decoration: none;
+    color: #1565C0;
+}
+
+.post-title h3 {
+    margin: 0;
+}
+
+.post-date,
+.comment-date{
+    color: #839192;
+}
+
+.post-text {
+    padding: 4px 0;
+    height: 88px;
+    max-height: 110px;
+    overflow: hidden;
+}
+
+.post-text-full {
+    padding: 4px 0;
+    cursor: auto;
+    margin: 0 0 20px 0;
+}
+
+.post-text p {
+    margin: 0;
+    padding: 4px;
+    height: 90px;
+}
+
+.open-news {
+    display: flex;
+    margin: 4px 0 4px 0;
+    justify-content: center;
+    cursor: auto;
+}
+
+.open-news-button,
+.logout-form input{
+    -moz-box-shadow:inset 0px 0px 2px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 0px 2px 0px #ffffff;
+    box-shadow:inset 0px 0px 2px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+    background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+    background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+    background-color:#ededed;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#777777;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:8px 28px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+.open-news-button:hover,
+.logout-form:hover input{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+    background-color:#dfdfdf;
+}
+
+.comments {
+    flex-direction: column;
+    display: flex;
+    border-top: 1px dotted darkgrey;
+}
+
+.comments h4 {
+    margin: 4px 0;
+}
+
+.comment {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    border-bottom: 1px solid #FB0E0E;
+}
+
+.comment-info {
+    margin: 0 6px;
+}
+
+.comment-avatar {
+    height: 52px;
+    width: 56px;
+    min-width: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-avatar img {
+    height: 100%;
+    object-fit: cover;
+    max-width: 59px;
+}
+
+.comment-text,
+.comment-hide-more{
+    margin: 0;
+    height: auto;
+    max-height: 54px;
+    font-weight: normal;
+}
+
+.comment-hide-more {
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#comment-remove {
+    display: flex;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.show-full-comment {
+    display: flex;
+    color: #076FE5;
+    border-top: 1px solid grey;
+    justify-content: center;
+}
+
+.show-full-comment:hover {
+    cursor: pointer;
+}
+
+#editor {
+    height: 140px;
+}
+
+#add-comment {
+    padding: 6px 0;
+}
+
+.comment-page-buttons {
+    display: flex;
+    margin: 6px 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+.comment-page-button {
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-bottom: 4px;
+    border: 1px solid darkgrey;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.comment-page-dots {
+    display: flex;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    align-items: flex-end;
+}
+
+.comment-page-button:hover {
+    background-color: #999999;
+    color: maroon;
+}
+
+.current-page-button {
+    background-color: #9aedff;
+    color: #FB0E0E;
+    cursor: default;
+}
+
+.current-page-button:hover {
+    background-color: #9aedff;
+    color: #FB0E0E;
+}
+
+.registration-form input:last-child {
+    color: #12435b;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.registration-place {
+    margin: 40px 0 0 0;
+    padding: 20px;
+    height: auto;
+    max-width: 500px;
+    box-sizing: border-box;
+    background-color: #BFDDFF;
+    border: 1px solid #12435b;
+}
+
+.register-successful {
+    margin: 200px 0 0 0;
+    width: 800px;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-error {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 18px;
+}
+
+.registration-submit {
+    margin-top: 20px;
+    width: 200px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.registration-fields {
+    width: 400px;
+    height: 24px;
+    margin: 6px 0;
+}
+
+.user-profile {
+    display: flex;
+    max-width: 840px;
+    flex-direction: column;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 0;
+}
+
+.user-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.user-register {
+    padding: 8px 0;
+    color: #777777;
+}
+
+.user-info-about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+}
+
+
+.full-width-page {
+    display: flex;
+    justify-content: center;
+}
+
