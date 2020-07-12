@@ -8,4 +8,3 @@ $app = new App;
 
 $app->run();
 $test = 'hello';
-$test2 = 'world';
