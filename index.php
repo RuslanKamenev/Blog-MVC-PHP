@@ -7,3 +7,5 @@ require_once CORE_PATH.'/preload.php';
 $app = new App;
 
 $app->run();
+$test = 'hello';
+$test2 = 'world';
