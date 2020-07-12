@@ -8,4 +8,4 @@ $app = new App;
 
 $app->run();
 $test = 'hello';
-$test3 = 'New test';
+$test = 'conflict';
